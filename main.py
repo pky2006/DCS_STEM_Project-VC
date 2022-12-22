@@ -48,6 +48,51 @@ while True:
 
 
 		print(history)
+		print("Score: ",score)
 		print('\nElaborations: ',level_1[a]["Elaborations"])
 		print("-"*20,"\n")
 		time.sleep(2)	# Wait 2 second for the user to read the elaborations
+	print("="*20,"\n")
+
+	print("Congratulation! You are level 2\n")
+
+	for a in range(0,len(level_2)):
+		print("Q: ",level_2[a]["Question"])
+		
+		for i in range(0,len(level_2[a]["Choice"])):
+			print(level_2[a]["Choice"][i])
+
+		while True:
+			ans=input("Ans: ").upper()
+			if ans == level_2[a]["Ans"]:
+				print("Well Done")
+				score += 2
+				correct += 1
+
+			elif ans not in ("A","B","C","D"):
+				print("Please input again\n")
+				continue
+
+			else:
+				print("Good Try")
+				wrong += 1
+			history.append(ans)
+			break
+
+
+		print(history)
+		print("Score: ", score)
+		print('\nElaborations: ',level_2[a]["Elaborations"])
+		print("-"*20,"\n")
+		time.sleep(2)	# Wait 2 second for the user to read the elaborations
+	print("="*20,"\n")
+
+	print("="*20,"\n\n")
+	print("The game is ended. \n Here is your mark:")
+	print("\t Total Score: ", score)
+	print("\tCorrect: " ,correct)
+	print("\tWrong: ",wrong)
+	print("\tHistory: ",history)
+	print("="*20,"\n\n")
+
+
