@@ -72,3 +72,9 @@ while True:
 		if status <= 3:
 			print(f"Congratulation! You are level {status}\n")
 			
+	print("="*20,"\n\n")
+	print("The game is ended. \nHere is your mark:")
+	print("\tTotal Score: \t", score)
+	print("\tCorrect: \t" ,correct)
+	print("\tWrong: \t\t",wrong)
+	print("="*20,"\n\n")
