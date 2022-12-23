@@ -31,31 +31,31 @@
 			"Question":"When did Hong Kong government start the research of district cooling?",
 			"Choice":["A. 1980","B. 1990","C. 1997","D. 2022"],
 			"Ans":"C",
-			"Elaborations":" "
+			"Elaborations":"null"
 		}
 	],
 	"lv_3":[
 		{
 			"Question":"Kai Tak DCS in 2013 to 2019-20 as an example, how many carbon emissions does the District Cooling System reduce?",
-			"Choice":["A. 14 210 tonnee","B. 15 210 tonnes" ,"C.	20 210 tonnes","D. 11 210 tonnes"],
+			"Choice":["A. 14 210 tonnee","B. 15 210 tonnes" ,"C. 20 210 tonnes","D. 11 210 tonnes"],
 			"Ans":"A",
 			"Elaborations":"The total estimated electricity saving from the commencement of operation of the Kai Tak DCS in 2013 to 2019-20 is about 20.3 million kWh (the total estimated electricity cost saving is about $ 24 million), which is equivalent to a reduction in carbon emissions of 14 210 tonnes."
 		},
 		{
 			"Question":"Which of the following is the main component in the District Cooling System?",
-			"Choice":["A. Fan motor","B. Condenser fan","C.	Blower motor","D.	Louver","E. Central Chiller Plant"],
+			"Choice":["A. Fan motor","B. Condenser fan","C. Blower motor","D. Louver","E. Central Chiller Plant"],
 			"Ans":"E",
-			"Elaborations":"A typical DCS comprises the following components:\n\t- Central Chiller Plant - generate chilled water for cooling purposes.\n\t- Distribution Network - distribute chilled water to buildings. \n\t - Consumer Substation - interface with buildings' own air-conditioning circuits."
+			"Elaborations":"A typical DCS comprises the following components:\n\t- Central Chiller Plant - generate chilled water for cooling purposes.\n\t- Distribution Network - distribute chilled water to buildings. \n\t- Consumer Substation - interface with buildings' own air-conditioning circuits."
 		},
 		{
 			"Question":"Which of the following sentence(s) about the benefits of District Cooling System is correct?",
 			"Choice":["A. Energy Saving","B. Reduce Refrigerant Usage","C. Reduce Noise Pollution","D. Improve City Skyline","E. All are correct"],
 			"Ans":"E",
-			"Elaborations":" "
+			"Elaborations":"null"
 		},
 		{
 			"Question":"Arrange the following steps of District Cooling System in ascending order.\n(i)	User buildings\n(ii)	Underground water pipe network\n(iii)	Central Chiller Plant\n(iv)	Heat Exchangers",
-			"Choice":["A. i, iv, ii, iii","B. iii, ii, iv, i ","C. iv ,ii, iii, i","D. iii, iv, ii, i","E.	i, ii, iv, iii"],
+			"Choice":["A. i, iv, ii, iii","B. iii, ii, iv, i ","C. iv ,ii, iii, i","D. iii, iv, ii, i","E. i, ii, iv, iii"],
 			"Ans":"B",
 			"Elaborations":"District cooling system (DCS) distributes chilled water through network of underground pipes from central chiller plant to multiple buildings for air-conditioning."
 		},
@@ -63,19 +63,19 @@
 			"Question":"Kai Tak DCS in 2013 to 2019-20 as an example, which is/ are the key component(s) of the charge?",
 			"Choice":["A. Capacity Charge","B. Consumption Charge","C. Electricity Charge","D. All of the above","E. Both A and B"],
 			"Ans":"E",
-			"Elaborations":"The key components of the charge are:\n\t1. Capacity Charge\n\t\tCalculated based on the contract capacity and the capacity charge rate applicable to the building;\n\t2. Consumption Charge\n\t\tCalculated based on the actual cooling energy consumption of the building in the month and the consumption charge rate applicable to the building."
+			"Elaborations":"The key components of the charge are:\n\t1. Capacity Charge\n\t\tCalculated based on the contract capacity and the capacity charge rate applicable to the building;\n\n\t2. Consumption Charge\n\t\tCalculated based on the actual cooling energy consumption of the building in the month and the consumption charge rate applicable to the building."
 		},
 		{
 			"Question":"What is the Capacity Charge Rate in 2022/23?",
-			"Choice":["A. $ 133.26 per kilowatt refrigeration per month","B. $ 143.26 per kilowatt refrigeration per month","C.	$ 153.36 per kilowatt rfrigeration per month","D. $ 163.5 per kilowatt refrigeration per month"],
+			"Choice":["A. $ 133.26 per kilowatt refrigeration per month","B. $ 143.26 per kilowatt refrigeration per month","C. $ 153.36 per kilowatt rfrigeration per month","D. $ 163.5 per kilowatt refrigeration per month"],
 			"Ans":"A",
-			"Elaborations":""
+			"Elaborations":"null"
 		},
 		{
 			"Question":"What is the Consumption Charge Rate in 2022/23?",
 			"Choice":["A. $0.2068 per kilowatt-hour refrigeration","B. $0.2188 per kilowatt-hour refrigeration","C. $0.2268 per kilowatt-hour refrigeration","D. $0.2288 per kilowatt-hour refrigeration"],
 			"Ans":"B",
-			"Elaborations":""
+			"Elaborations":"null"
 		}
 	]
 }
