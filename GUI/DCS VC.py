@@ -160,7 +160,7 @@ while run:
             answer = 1
         elif C_button.C_draw(screen):
             menu_state="solution2"
-            manswer=0
+            answer=0
             score=score+1
 
     #question3        
