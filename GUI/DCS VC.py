@@ -2,13 +2,13 @@ import sys
 import pygame
 import button_push as bp
 import colour as cl
+import time
 
 pygame.init()
 
 #創建窗口
 screen_width= 900
 screen_height= 650
-
 screen = pygame.display.set_mode((screen_width,screen_height))
 screen_rect=screen.get_rect()
 pygame.display.set_caption("VC_DCS")
@@ -17,7 +17,7 @@ pygame.display.set_caption("VC_DCS")
 score = 0
 score_font=pygame.font.SysFont("Arial",200)
 
-
+play= False
 
 #定義變量----遊戲菜單
 menu_state = 'main'
@@ -27,6 +27,10 @@ Question = False
 #字體
 font =pygame.font.SysFont("Arial",45)
 
+#Model
+DCS1_img =pygame.image.load('images/DCS1.png')
+DCS2_img =pygame.image.load('images/DCS2.png')
+DCS3_img =pygame.image.load('images/DCS3.png')
 
 #問題圖像
 question1_img =pygame.image.load('images/question1.png')
@@ -51,7 +55,7 @@ solution4_img =pygame.image.load('images/solution4.png')
 solution5_img =pygame.image.load('images/solution5.png')
 solution6_img =pygame.image.load('images/solution6.png')
 solution8_img =pygame.image.load('images/solution8.png')
-solution9_1_img =pygame.image.load('images/solution9_1.png')
+solution9_img =pygame.image.load('images/solution9.png')
 solution10_img =pygame.image.load('images/solution10.png')
 solution11_img =pygame.image.load('images/solution11.png')
 solution12_img =pygame.image.load('images/solution12.png')
@@ -67,14 +71,14 @@ end_img =pygame.image.load('images/end.png')
 
 #菜單圖像
 start_img= font.render(" START ",True,cl.white)
-control_img= font.render(" CONTROL ",True,cl.white)
+model_img= font.render(" MODEL ",True,cl.white)
 explain_img= font.render(" EXPLAIN ",True,cl.white)
 starting_img= font.render(" gaming ....",True,cl.white)
-controling_img= font.render(" how to control...",True,cl.black)
 explaining_img= font.render(" explaining.....",True,cl.black)
 starting_img=font.render(" question1 ",True,cl.black)
 back_img=font.render(' BACK ',True,cl.white)
 close_img=font.render(' Close ',True,cl.white)
+play_img=font.render(' Play ',True,cl.white)
 
 #答題圖像
 A_img= font.render(" A ",True,cl.white)
@@ -86,21 +90,25 @@ E_img= font.render(" E ",True,cl.white)
 
 #菜單按鈕
 start_button= bp.Button(40,200,start_img,1)
-control_button= bp.Button(40,350,control_img,1)
-explain_button= bp.Button(40,500,explain_img,1)
+model_button= bp.Button(40,420,model_img,1)
+#explain_button= bp.Button(40,500,explain_img,1)
 close_button= bp.Button(10,550,close_img,1)
+play_button= bp.Button(10,550,play_img,1)
 
 #答題按鈕
-A_button = bp.Button(50,500,A_img,1)
-B_button = bp.Button(210,500,B_img,1)
-C_button = bp.Button(370,500,C_img,1)
-D_button = bp.Button(530,500,D_img,1)
-E_button = bp.Button(690,500,E_img,1)
+A_button = bp.Button(50,500,A_img,2)
+B_button = bp.Button(210,500,B_img,2)
+C_button = bp.Button(370,500,C_img,2)
+D_button = bp.Button(530,500,D_img,2)
+E_button = bp.Button(690,500,E_img,2)
 
 
 #菜單按鈕
 back_button=bp.Button(750,550,back_img,1)
 next_button = bp.Button(780,550,next_img,1)
+
+
+    
 
 #窗口顯示
 run=True
@@ -122,21 +130,14 @@ while run:
         screen.blit(menu_img,(0,0))
         if start_button.draw(screen):
             menu_state="question1"
-        if control_button.draw(screen):
-            menu_state="control"
-        if explain_button.draw(screen):
-            menu_state="explain"
-    
-    
-    #查看如何操作狀態
-    elif menu_state=="control":
-        screen.blit(controling_img,(0,0))
-        if back_button.draw(screen):
-            menu_state="main"
+        if model_button.draw(screen):
+            menu_state="model"
 
-    #解釋狀態
-    elif menu_state=="explain":
-        screen.blit(explaining_img,(0,0))
+
+    
+    #模型
+    elif menu_state=="model":
+        screen.blit(DCS2_img,(0,0))
         if back_button.draw(screen):
             menu_state="main"
 
@@ -367,7 +368,7 @@ while run:
 
     #solution9
     elif menu_state=="solution9":
-        screen.blit(solution9_1_img,(0,0))
+        screen.blit(solution9_img,(0,0))
         if answer== 0:
             screen.blit(True_img,(20,0))
         if answer==1:

@@ -27,7 +27,6 @@ class Button():
             if pygame.mouse.get_pressed()[0] == 1 and self.clicked ==False:
                 self.clicked =True
                 action = True
-                print("clicked")
 
         #鼠標沒有被點擊
         if pygame.mouse.get_pressed()[0] == 0:
@@ -53,7 +52,6 @@ class Button():
                 if pygame.mouse.get_pressed()[0] == 1 and self.clicked ==False:
                     self.clicked =True
                     action = True
-                    print(" A clicked")
 
             #鼠標沒有被點擊
             if pygame.mouse.get_pressed()[0] == 0:
@@ -79,7 +77,6 @@ class Button():
                 if pygame.mouse.get_pressed()[0] == 1 and self.clicked ==False:
                     self.clicked =True
                     action = True
-                    print("B clicked")
 
             #鼠標沒有被點擊
             if pygame.mouse.get_pressed()[0] == 0:
@@ -105,7 +102,6 @@ class Button():
                 if pygame.mouse.get_pressed()[0] == 1 and self.clicked ==False:
                     self.clicked =True
                     action = True
-                    print("C clicked")
 
             #鼠標沒有被點擊
             if pygame.mouse.get_pressed()[0] == 0:
@@ -131,7 +127,6 @@ class Button():
                 if pygame.mouse.get_pressed()[0] == 1 and self.clicked ==False:
                     self.clicked =True
                     action = True
-                    print("D clicked")
 
             #鼠標沒有被點擊
             if pygame.mouse.get_pressed()[0] == 0:
@@ -157,7 +152,6 @@ class Button():
                 if pygame.mouse.get_pressed()[0] == 1 and self.clicked ==False:
                     self.clicked =True
                     action = True
-                    print("E clicked")
 
             #鼠標沒有被點擊
             if pygame.mouse.get_pressed()[0] == 0:
