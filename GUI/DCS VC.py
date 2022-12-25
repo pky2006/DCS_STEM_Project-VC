@@ -418,7 +418,7 @@ while run:
      #End
     elif menu_state=="End":
         screen.blit(end_img,(0,0))
-        screen.blit(score_surface,(500,200))
+        screen.blit(score_surface,(480,200))
         if close_button.B_draw(screen):
             run=False
             pygame.quit()
