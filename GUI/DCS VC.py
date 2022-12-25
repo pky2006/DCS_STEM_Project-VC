@@ -57,8 +57,8 @@ solution6_img =pygame.image.load('images/solution6.png')
 solution8_img =pygame.image.load('images/solution8.png')
 solution9_img =pygame.image.load('images/solution9.png')
 solution10_img =pygame.image.load('images/solution10.png')
-solution11_img =pygame.image.load('images/solution11.png')
-solution12_img =pygame.image.load('images/solution12.png')
+solution11_img =pygame.image.load('images/solution12.png')
+solution12_img =pygame.image.load('images/solution11.png')
 solution13_img =pygame.image.load('images/solution13.png')
 
 #true or not圖像
