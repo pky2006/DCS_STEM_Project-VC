@@ -1,3 +1,3 @@
 # DCS_STEM_Project
 
-## Plan 
+The repository is used for the DCS Competition.
